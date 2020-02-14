@@ -1,0 +1,127 @@
+---
+layout: post
+title: Ubuntu软件安装手册!
+tags: Brunce
+stickie: true
+---
+
+
+
+软件与更新里换站点
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+
+
+安装tools: <https://blog.csdn.net/yuanxiang01/article/details/78787823>
+
+安装typora: <https://www.typora.io/#linux>
+
+安装vscode: https://code.visualstudio.com/Download
+
+安装搜狗输入法: <https://blog.csdn.net/fx_yzjy101/article/details/80243710>
+
+安装git: sudo apt-get install git
+
+配置git:
+
+```
+# 查看 git 版本
+git --version
+
+# 查看配置
+git config -l
+
+# 设置用户名和邮箱
+git config [--global] user.name "Your Name"
+git config [--global] user.email "your@email.com"
+
+# 中括号内的参数:
+#     --local  本地
+#     --system 系统
+#     --global 全局
+#     无参，则为当前库配置身份
+
+# 如:
+git config --global user.name "seeker"
+git config --global user.email "3300696254@qq.com"
+```
+
+生成公钥到保存到码云:
+
+```
+ssh-keygen -t rsa -C "邮箱"
+
+查看公钥:
+
+cat ~/.ssh/id_rsa.pub
+```
+
+安装vim:  sudo apt-get install vim
+
+​	或者:  <https://blog.csdn.net/Elio_LosEr/article/details/88977797>
+
+安装nodejs:   sudo apt-get install nodejs
+
+​	或者:   https://blog.csdn.net/cgs1999/article/details/89703649
+
+​	
+
+安装jekyll教程:
+
+```
+我们将首先将所有系统软件包更新到最新版本，然后继续安装Jekyll：
+
+$ sudo apt-get update
+
+$ sudo apt-get upgrade
+
+安装ruby,因为ruby由于各种原因，原本完整的安装包被分割为多个小包，ruby-full保证了全部特性安装。
+
+sudo apt install ruby-full
+
+sudo apt-get install rubygems
+
+which gem     //查看gem的安装位置，正常显示“/usr/bin/gem”
+
+升级gem:
+
+sudo gem update --system
+
+首先安装gcc编译包
+
+sudo apt-get install build-essential
+
+安装make
+
+sudo apt-get install make
+
+更换源
+
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+
+查看源
+
+gem sources -l
+
+安装jekyll
+
+sudo gem install jekyll
+
+
+```
+
+
+
+
+
+sudo apt-get remove xxxx - - purge  删除软件包，包括删除配置文件等
+
+
+
+
+Welcome to Brunce!<br>If you saw this post, your blog has been successfully deployed.So enjoy the fun of writing now!
+
+> Hello Brunce!
